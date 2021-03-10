@@ -1,0 +1,18 @@
+@import "variables";
+
+.sign-nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $white;
+  margin-left: 15px;
+}
+
+.sign-nav__login {
+  &:hover, 
+  &:focus {
+    color: darken($white, 30%);
+  }
+}
