@@ -1,0 +1,23 @@
+@import "variables";
+
+.main-nav {
+  margin: 45px 15px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $white;  
+}
+
+.main-nav__item {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.main-nav__link {
+  &:hover, &:active {
+    color: darken($white, 30%);
+  }
+}

@@ -1,0 +1,26 @@
+@import "variables";
+
+.plus-nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: transparentize($white, 0.25);
+  margin: 0 0 45px 15px;
+}
+
+.plus-nav__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.plus-nav__link {
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}

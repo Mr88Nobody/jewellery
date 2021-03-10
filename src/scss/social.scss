@@ -1,0 +1,35 @@
+@import "variables";
+
+.social__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social__item {
+  margin-right: 30px;
+}
+
+.social__link-icon {
+  width: 30px;
+  height: 30px;
+  fill: $white;
+  transition: 0.5s;
+
+  &--vk {
+    &:hover {
+      fill: #597da3;
+    }
+  }
+
+  &--fb {
+    &:hover {
+      fill: #3b5998;
+    }
+  }
+
+  &--insta {
+    &:hover {
+      fill: #833ab4;
+    }
+  }
+}

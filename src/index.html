@@ -17,51 +17,63 @@
 
       <div class="header__top">
 
-        <span class="material-icons">
-          menu
-        </span>
+        <div class="header__icon">
+          <span class="material-icons icon-menu">
+            menu
+          </span>
+        </div>
 
         <picture>
           <img src="src/img/logo.svg" alt="Logo">
         </picture>
 
-        <span class="material-icons">
-          shopping_basket
-        </span>
+        <div class="header__icon">
+          <span class="material-icons icon-cart">
+            shopping_basket
+          </span>
+        </div>
 
       </div>
 
-      <input type="search" class="header__input">
-
       <div class="header__menu">
+
+        <input type="search" class="header__input">
+        <svg class="search-icon" width="15" height="15">
+          <use xlink:href="src/img/Vector.svg#vector"></use>
+        </svg>
 
         <nav class="header__nav">
 
           <ul class="main-nav">
 
             <li class="main-nav__item">
-              <a href="#" class="main-nav__item-link">What’s new</a>
+              <a href="#" class="main-nav__link">What’s new</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__item-link">Chokers</a>
+              <a href="#" class="main-nav__link">Chokers</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__item-link">Necklaces</a>
+              <a href="#" class="main-nav__link">Necklaces</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__item-link">Rings</a>
+              <a href="#" class="main-nav__link">Rings</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__item-link">Earrings</a>
+              <a href="#" class="main-nav__link">Earrings</a>
             </li>
 
           </ul>
+
           <ul class="plus-nav">
 
             <li class="plus-nav__item">
-              <a href="#" class="plus-nav__item-link">About CH</a>
-              <a href="#" class="plus-nav__item-link">Stores & Hours</a>
-              <a href="#" class="plus-nav__item-link">Contact Us</a>
+              <a href="#" class="plus-nav__link">About CH</a>
+            </li>
+            <li class="plus-nav__item">
+              <a href="#" class="plus-nav__link">Stores & Hours</a>
+            </li>
+            <li class="plus-nav__item">
+              <a href="#" class="plus-nav__link">Contact Us</a>
             </li>
 
           </ul>
@@ -84,29 +96,69 @@
   <main class="content">
 
     <div class="title">
+      <div class="title-layout">
 
-      <h1 class="title__headline">PERFECTION</h1>
-      <strong class="title__text">made to be yours</strong>
+        <h1 class="title__headline">PERFECTION</h1>
+        <p class="title__text">made to be yours</p>
 
+      </div>
     </div>
 
-    <div class="content__new new">
+    <section class="content__new new">
 
       <h2 class="new__title">New In</h2>
 
-      <a href="#" class="new__link">Shop now</a>
+      <a href="#" class="new__link link">Shop now</a>
 
       <div class="new__slider slider">
 
-        <img src="src/img/purple-gemstone-necklace.png" alt="purple necklace" width="130">
-        <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
-        <span class="slider__num">1 of 6</span>
+        <div class="slider__item">
+          <img src="src/img/purple-gemstone-necklace.png" alt="purple necklace" width="130">
+          <p class="slider__text">Necklace with amethyst</p>
+          <p class="slider__cost">$ 145</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <p class="slider__text">Layered сhoker</p>
+          <p class="slider__cost">$ 115</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <p class="slider__text">Layered сhoker</p>
+          <p class="slider__cost">$ 115</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <p class="slider__text">Layered сhoker</p>
+          <p class="slider__cost">$ 115</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <p class="slider__text">Layered сhoker</p>
+          <p class="slider__cost">$ 115</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <p class="slider__text">Layered сhoker</p>
+          <p class="slider__cost">$ 115</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <p class="slider__text">Layered сhoker</p>
+          <p class="slider__cost">$ 115</p>
+        </div>
 
       </div>
 
-    </div>
+    </section>
 
-    <div class="content__blog blog">
+    <section class="content__blog blog">
 
       <h2 class="blog__title">Blog</h2>
 
@@ -165,9 +217,9 @@
         </div>
 
       </div>
-    </div>
+    </section>
 
-    <div class="content__faq faq">
+    <section class="content__faq faq">
 
       <h2 class="faq__title">
         Frequently asked questions
@@ -176,9 +228,9 @@
       <ul class="faq__list">
 
         <li class="faq__item">
-          <p class="faq__qeustion">
+          <h3 class="faq__qeustion">
             What materials are the jewellery made of?
-          </p>
+          </h3>
           <p class="faq__answer">
             Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
             semiprecious stones and crystals.
@@ -186,9 +238,9 @@
         </li>
 
         <li class="faq__item">
-          <p class="faq__qeustion">
+          <h3 class="faq__qeustion">
             Which countries do you deliver to?
-          </p>
+          </h3>
           <p class="faq__answer">
             Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
             semiprecious stones and crystals.
@@ -196,9 +248,9 @@
         </li>
 
         <li class="faq__item">
-          <p class="faq__qeustion">
+          <h3 class="faq__qeustion">
             What are the payment methods?
-          </p>
+          </h3>
           <p class="faq__answer">
             Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
             semiprecious stones and crystals.
@@ -206,9 +258,9 @@
         </li>
 
         <li class="faq__item">
-          <p class="faq__qeustion">
+          <h3 class="faq__qeustion">
             Can I return the jewellery if it didn’t fit me?
-          </p>
+          </h3>
           <p class="faq__answer">
             Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
             semiprecious stones and crystals.
@@ -216,23 +268,23 @@
         </li>
 
       </ul>
-    </div>
+    </section>
 
-    <div class="content__inst inst">
+    <section class="content__inst inst">
 
       <h2 class="inst__title">@Chjewellery</h2>
 
       <a href="#" class="inst__link link">Follow us</a>
 
       <figure class="inst__gallery">
-        <img src="src/img/8.png" alt="" width="130">
-        <img src="src/img/1.png" alt="" width="130">
-        <img src="src/img/5.png" alt="" width="130">
-        <img src="src/img/2.png" alt="" width="145">
-        <img src="src/img/4.png" alt="" width="145">
+        <img class="inst__img inst__img--1" src="src/img/8.png" alt="" width="130">
+        <img class="inst__img inst__img--2" src="src/img/1.png" alt="" width="130">
+        <img class="inst__img inst__img--3" src="src/img/5.png" alt="" width="130">
+        <img class="inst__img inst__img--4" src="src/img/2.png" alt="" width="145">  
+        <img class="inst__img inst__img--5" src="src/img/4.png" alt="" width="145">              
       </figure>
 
-    </div>
+    </section>
 
   </main>
 
@@ -246,7 +298,7 @@
         News and updates from CH. No spam, we promise.
       </p>
 
-      <input class="sub__input" type="email" name="email" id="sub-email">
+      <input class="sub__input" type="email" name="email" id="sub-email" placeholder="Your E-mail">
       <button class="sub__btn" type="submit">Sign Up</button>
 
     </div>
@@ -296,19 +348,27 @@
       <ul class="social__list">
 
         <li class="social__item">
-          <a href="#" class="social__link">Facebook</a>
+          <a href="#" class="social__link">
+            <svg class="social__link-icon social__link-icon--fb" width="30" height="30">
+              <use xlink:href="src/img/svg/fb-icon.svg#fb-icon"></use>
+            </svg>
+          </a>
         </li>
 
         <li class="social__item">
-          <a href="#" class="social__link">Instagram</a>
+          <a href="#" class="social__link">
+            <svg class="social__link-icon social__link-icon--insta" width="30" height="30">
+              <use xlink:href="src/img/svg/insta-icon.svg#insta-icon"></use>
+            </svg>
+          </a>
         </li>
 
         <li class="social__item">
-          <a href="#" class="social__link">Pinterest</a>
-        </li>
-
-        <li class="social__item">
-          <a href="#" class="social__link">Twitter</a>
+          <a href="#" class="social__link">
+            <svg class="social__link-icon social__link-icon--vk" width="30" height="30">
+              <use xlink:href="src/img/svg/vk-icon.svg#vk-icon"></use>
+            </svg>
+          </a>
         </li>
 
       </ul>

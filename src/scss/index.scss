@@ -1,8 +1,26 @@
 @import "~normalize.css";
+@import "variables";
 @import "./fonts/fonts";
+@import "header";
+@import "main-nav";
+@import "plus-nav";
+@import "sign-nav";
+@import "title";
+@import "new";
+@import "slider";
+@import "link";
+@import "blog";
+@import "~slick-carousel/slick/slick";
+@import "new";
+@import "news";
+@import "faq";
+@import "inst";
+@import "footer";
+@import "sub";
+@import "social";
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 a {
@@ -21,4 +39,6 @@ body {
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
+  color: $black;
+  overflow-x: hidden;
 }
