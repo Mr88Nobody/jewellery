@@ -14,17 +14,20 @@
   height: 24px;
   text-align: center;
 
-  & .icon-cart {    
+  & .icon {    
     font-size: 24px;
     color: $black;
     cursor: pointer;
+    transition: color 0.3s;
+    outline: none;
+    border: 0;
+    background: transparent;
 
-  }
-  & .icon-menu {
-    font-size: 24px;
-    color: $black;
-    cursor: pointer;
-  }
+    &:hover,
+    &:focus {
+      color: $grey;
+    }
+  } 
 }
 
 
@@ -42,10 +45,20 @@
   position: absolute;
   font-family: "Poppins", sans-serif;
   width: 100vw;
-  left: -100vw;
+  left: 0;
   top: $header-height;
   bottom: 0;
   background: $brown;
+  z-index: 10;
+  transition: left 0.4s ease;
+
+  &--closed {
+    left: -100vw;
+  }
+
+  &--open {
+    left: 0;
+  }
 }
 
 .header__input {

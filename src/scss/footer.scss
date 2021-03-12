@@ -5,10 +5,27 @@
   padding: 0 15px 60px 15px;
   background-color: black;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 45px 60px 45px;
+  }
+}
+
+.footer-nav {
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
 }
 
 .footer-nav__list {
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    columns: 2;
+    margin-bottom: 0;
+  }
 }
 
 .footer-nav__item {
