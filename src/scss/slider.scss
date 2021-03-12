@@ -3,13 +3,26 @@
 .slider {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 40px;  
 }
 
 .slider__item {
   display: flex;
   flex-direction: column;
-  max-width: 130px; 
+  max-width: 130px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+  }
+}
+
+.slider__pic {
+  width: 130px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
 }
 
 .slider__text {
@@ -71,4 +84,38 @@
 
 .slick-dots button:hover::before {
   background-color: black;
+}
+
+.slick-arrow {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    border: 0;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-top: 2px solid $brown;
+    border-right: 2px solid $brown;
+    outline: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-color: darken($brown, 20%);
+    }
+  }
+  &.slick-prev {
+    transform: rotate(-135deg);
+    top: -100px;
+    left: 30px;
+  }
+
+  &.slick-next {
+    transform: rotate(45deg);
+    top: -100px;
+    right: 30px;
+  }
 }

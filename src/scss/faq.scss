@@ -1,9 +1,14 @@
 @import "variables";
+@import "mixins";
 
 .faq {
-  min-width: 290px;
-  padding: 0 15px;
+  @include container();
+  min-width: 290px;    
   margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+  }
 }
 
 .faq__list {
@@ -11,24 +16,17 @@
 }
 
 .faq__item {
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid $brown;
-  cursor: pointer;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    right: 38px;
-    top: 5px;
-    border-top: 1px solid $brown;
-    border-right: 1px solid $brown;
-    transform: rotate(-45deg);
-  }
+  padding: 25px;  
 
   &:last-child {
     border-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
   }
 }
 
@@ -46,16 +44,34 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 22px; 
-  margin: 25px;
-  margin-right: 85px;  
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+
+  &::after {
+    content: "+";
+    font-size: 30px;
+    color: $brown;    
+    margin-left: auto;
+    transition: 0.4s ease;  
+  }
+
+  &--active::after {
+    content: "-";
+  }
 }
 
 .faq__answer {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 19px;  
-  margin-left: 25px;
-  margin-right: 55px;
+  line-height: 19px; 
+  padding: 0;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: all 0.6s ease;  
 }

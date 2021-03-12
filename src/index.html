@@ -18,9 +18,9 @@
       <div class="header__top">
 
         <div class="header__icon">
-          <span class="material-icons icon-menu">
+          <button class="material-icons icon icon-menu">
             menu
-          </span>
+          </button>
         </div>
 
         <picture>
@@ -28,14 +28,14 @@
         </picture>
 
         <div class="header__icon">
-          <span class="material-icons icon-cart">
+          <button class="material-icons icon icon-cart">
             shopping_basket
-          </span>
+          </button>
         </div>
 
       </div>
 
-      <div class="header__menu">
+      <div class="header__menu header__menu--closed">
 
         <input type="search" class="header__input">
         <svg class="search-icon" width="15" height="15">
@@ -113,43 +113,64 @@
       <div class="new__slider slider">
 
         <div class="slider__item">
-          <img src="src/img/purple-gemstone-necklace.png" alt="purple necklace" width="130">
+          <picture>
+            <source media="min-width: 768px" srcset="src/img/purple-gemstone-necklace-tablet.png">
+            <img class="slider__pic" src="src/img/purple-gemstone-necklace.png" alt="purple necklace" width="130">
+          </picture>
           <p class="slider__text">Necklace with amethyst</p>
           <p class="slider__cost">$ 145</p>
         </div>
 
         <div class="slider__item">
-          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <picture>
+            <source media="min-width: 768px" srcset="src/img/layered-choker-necklace-tablet.png">
+            <img class="slider__pic" src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          </picture>
           <p class="slider__text">Layered сhoker</p>
           <p class="slider__cost">$ 115</p>
         </div>
 
         <div class="slider__item">
-          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <picture>
+            <source media="min-width: 768px" srcset="src/img/layered-choker-necklace-tablet.png">
+            <img class="slider__pic" src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          </picture>
           <p class="slider__text">Layered сhoker</p>
           <p class="slider__cost">$ 115</p>
         </div>
 
         <div class="slider__item">
-          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <picture>
+            <source media="min-width: 768px" srcset="src/img/layered-choker-necklace-tablet.png">
+            <img class="slider__pic" src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          </picture>
           <p class="slider__text">Layered сhoker</p>
           <p class="slider__cost">$ 115</p>
         </div>
 
         <div class="slider__item">
-          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <picture>
+            <source media="min-width: 768px" srcset="src/img/layered-choker-necklace-tablet.png">
+            <img class="slider__pic" src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          </picture>
           <p class="slider__text">Layered сhoker</p>
           <p class="slider__cost">$ 115</p>
         </div>
 
         <div class="slider__item">
-          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <picture>
+            <source media="min-width: 768px" srcset="src/img/layered-choker-necklace-tablet.png">
+            <img class="slider__pic" src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          </picture>
           <p class="slider__text">Layered сhoker</p>
           <p class="slider__cost">$ 115</p>
         </div>
 
         <div class="slider__item">
-          <img src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          <picture>
+            <source media="min-width: 768px" srcset="src/img/layered-choker-necklace-tablet.png">
+            <img class="slider__pic" src="src/img/layered-choker-necklace.png" alt="purple necklace" width="130">
+          </picture>
           <p class="slider__text">Layered сhoker</p>
           <p class="slider__cost">$ 115</p>
         </div>
@@ -299,7 +320,12 @@
       </p>
 
       <input class="sub__input" type="email" name="email" id="sub-email" placeholder="Your E-mail">
-      <button class="sub__btn" type="submit">Sign Up</button>
+      <button class="sub__btn" type="submit">
+        Sign Up
+        <span class="material-icons sub__bnt-icon">
+          arrow_right_alt
+          </span>
+      </button>
 
     </div>
 
@@ -352,6 +378,7 @@
             <svg class="social__link-icon social__link-icon--fb" width="30" height="30">
               <use xlink:href="src/img/svg/fb-icon.svg#fb-icon"></use>
             </svg>
+            <span class="social__name">Facebook</span>
           </a>
         </li>
 
@@ -360,6 +387,7 @@
             <svg class="social__link-icon social__link-icon--insta" width="30" height="30">
               <use xlink:href="src/img/svg/insta-icon.svg#insta-icon"></use>
             </svg>
+            <span class="social__name">Instagram</span>
           </a>
         </li>
 
@@ -368,6 +396,7 @@
             <svg class="social__link-icon social__link-icon--vk" width="30" height="30">
               <use xlink:href="src/img/svg/vk-icon.svg#vk-icon"></use>
             </svg>
+            <span class="social__name">Vkontakte</span>
           </a>
         </li>
 

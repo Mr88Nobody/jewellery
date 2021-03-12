@@ -14,12 +14,33 @@
   &:last-child {
     margin-bottom: 70px;
   }
+
+  img {
+    width: 290px;
+    height: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+
+    & img {
+      width: 339px;
+    }
+  }
 }
 
 .news__wrap {
   background-color: $cream;
   max-width: 290px;
   padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 339px;
+  }
 }
 
 .news__time {
