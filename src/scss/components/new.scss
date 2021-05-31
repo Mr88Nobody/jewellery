@@ -1,6 +1,3 @@
-@import "variables";
-@import "mixins";
-
 .new {
   @include container();
   min-width: 290px;
