@@ -1,0 +1,122 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 130px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 324px;
+    }
+  }
+
+  &__pic {
+    width: 130px;
+    height: auto;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+    }
+  }
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__cost {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+
+  & button {
+    font-size: 0;
+    line-height: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+
+  & button::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: darkgray;
+  }
+}
+
+.slick-slide div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-active button::before {
+  background-color: black;
+}
+
+.slick-dots button:hover::before {
+  background-color: black;
+}
+
+.slick-arrow {
+  display: block;
+  position: absolute;
+  border: 0;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-top: 2px solid $brown;
+  border-right: 2px solid $brown;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: darken($brown, 20%);
+  }
+
+  &.slick-prev {
+    transform: rotate(-135deg);
+    top: -100px;
+    left: 30px;
+  }
+
+  &.slick-next {
+    transform: rotate(45deg);
+    top: -100px;
+    right: 30px;
+  }
+}

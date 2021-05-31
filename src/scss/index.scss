@@ -1,26 +1,27 @@
 @import "~normalize.css";
-@import "variables";
-@import "./fonts/fonts";
-@import "header";
-@import "main-nav";
-@import "plus-nav";
-@import "sign-nav";
-@import "title";
-@import "new";
-@import "slider";
-@import "link";
-@import "blog";
 @import "~slick-carousel/slick/slick";
-@import "new";
-@import "news";
-@import "faq";
-@import "inst";
-@import "footer";
-@import "sub";
-@import "social";
+@import "./helpers/_variables";
+@import "./helpers/_mixins";
+@import "./fonts/fonts";
+@import "./components/header.scss";
+@import "./components/main-nav";
+@import "./components/plus-nav";
+@import "./components/sign-nav";
+@import "./components/title";
+@import "./components/new";
+@import "./components/slider";
+@import "./components/link";
+@import "./components/blog";
+@import "./components/new";
+@import "./components/news";
+@import "./components/faq";
+@import "./components/inst";
+@import "./components/footer";
+@import "./components/sub";
+@import "./components/social";
 
 * {
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 a {
